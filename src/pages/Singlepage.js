@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 // Context
 import ShowsContext from "../context/shows/showsContext";
 import BookingPage from "../pages/BookingPage";
+import "../pages/booking-button.css";
 
 
 // Components
@@ -77,7 +78,7 @@ const Singlepage = ({ match }) => {
             <p>{singleShow.summary && removeTags(singleShow.summary)}</p>
             <Link
               to={`/booking/${singleShow.id}`}
-              className="btn btn-primary"
+              className="btn btn-primary booking-btn"
             >
               Book Now
             </Link>
